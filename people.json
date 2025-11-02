@@ -1,0 +1,50 @@
+[
+  {
+    "id": "26b7d836-3d45-4acd-a6e8-4912410111a7",
+    "slug": "burhan-al-din-abu-ishaq-al-arbili",
+    "full_name": "برهان الدين أبو إسحاق الأربيلي (ابن الجابي)",
+    "kunya_or_laqab": "ابن الجابي",
+    "nisba": "الأربيلي",
+    "roles": ["إمام", "خطيب", "معلّم"],
+    "bio_summary": "عالمٌ من علماء القرن الثامن الهجري، معروف بلقب ابن الجابي، شارك في الإمامة والخطابة بالمسجد النبوي.",
+    "death_year_hijri": 745,
+    "death_year_greg": 1344,
+    "birth_year_hijri": null,
+    "birth_year_greg": null,
+    "century_hijri": 8,
+    "sources": ["كتاب موسوعة الصفوة"],
+    "notes": []
+  },
+  {
+    "id": "67a965df-21fd-41b6-8068-cc5ad5bb10ea",
+    "slug": "ibrahim-bin-rajab-bin-hammad-al-rawashi",
+    "full_name": "إبراهيم بن رجب بن حماد الرَّوّاشي",
+    "kunya_or_laqab": null,
+    "nisba": "الرواشي",
+    "roles": ["معلّم"],
+    "bio_summary": "أحد المعلّمين في المسجد النبوي خلال القرن الثامن، يقال إنه من الرواشي وكان مهتمًا بالتعليم.",
+    "death_year_hijri": 755,
+    "death_year_greg": 1354,
+    "birth_year_hijri": null,
+    "birth_year_greg": null,
+    "century_hijri": 8,
+    "sources": ["كتاب موسوعة الصفوة"],
+    "notes": []
+  },
+  {
+    "id": "cc4ba260-b2de-492d-bb04-bd04cf0c5f1f",
+    "slug": "ibrahim-bin-muhammad-al-lakhmi",
+    "full_name": "إبراهيم بن محمد اللخمي",
+    "kunya_or_laqab": null,
+    "nisba": "اللخمي",
+    "roles": ["إمام"],
+    "bio_summary": "إمام بارز في المسجد النبوي في القرن العاشر الهجري، ينتمي إلى آل اللخمي.",
+    "death_year_hijri": 970,
+    "death_year_greg": 1562,
+    "birth_year_hijri": null,
+    "birth_year_greg": null,
+    "century_hijri": 10,
+    "sources": ["كتاب موسوعة الصفوة"],
+    "notes": []
+  }
+]
