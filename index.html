@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>موسوعة الصفوة</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="container">
     <h1>موسوعة الصفوة</h1>
+    <p class="muted">إعداد عقيل بن حمزة بن بكر بن أبا بكر خشيم</p>
     <p class="muted">مرجع تفاعلي لأعلام المسجد النبوي الشريف عبر العصور</p>
+    <nav style="margin-top:8px;">
+      <a href="intro.html" class="muted">المقدمة</a>
+    </nav>
   </header>
   <main class="container">
     <section class="controls">
-      <input id="search" placeholder="ابحث بالاسم..."/>
+      <input id="search" placeholder="ابحث بالاسم..." />
       <select id="sort">
         <option value="name">ترتيب أبجدي</option>
         <option value="death">سنة الوفاة (هجري)</option>
@@ -25,7 +29,7 @@
     <ul id="results" class="cards"></ul>
   </main>
   <footer class="container muted">
-    تم إعداد المحتوى اعتمادًا على ملف «موسوعة الصفوة». 
+    تم إعداد المحتوى اعتمادًا على ملف «موسوعة الصفوة».
   </footer>
   <script src="script.js"></script>
 </body>
