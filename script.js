@@ -14,9 +14,43 @@ function render() {
     const list = document.getElementById('results');
     list.innerHTML = '';
     state.filtered.forEach(p => {
+        // Prepare roles display with separators
+        const rolesHtml = (p.roles || []).map(r => String.raw`<span class="badge">${r}</span>`).join(' / ');
+        // Build birth and death date string
+        let dates = '';
+        // Birth date
+        if (p.birth_year_hijri || p.birth_year_greg) {
+            dates += 'ولد ';
+            if (p.birth_year_hijri) {
+                dates += p.birth_year_hijri + 'هـ';
+            }
+            if (p.birth_year_hijri && p.birth_year_greg) {
+                dates += ' / ';
+            }
+            if (p.birth_year_greg) {
+                dates += p.birth_year_greg + 'م';
+            }
+        }
+        // Death date
+        if (p.death_year_hijri || p.death_year_greg) {
+            if (dates) {
+                dates += '، ';
+            }
+            dates += 'توفي ';
+            if (p.death_year_hijri) {
+                dates += p.death_year_hijri + 'هـ';
+            }
+            if (p.death_year_hijri && p.death_year_greg) {
+                dates += ' / ';
+            }
+            if (p.death_year_greg) {
+                dates += p.death_year_greg + 'م';
+            }
+        }
+        const dateHtml = dates ? String.raw`<div class="muted">${dates}</div>` : '';
         const li = document.createElement('li');
         li.className = 'card';
-        li.innerHTML = String.raw`<h3>${p.full_name}</h3><p class="muted">${(p.roles || []).map(r => String.raw`<span class="badge">${r}</span>`).join(' / ')}</p>${p.death_year_hijri ? String.raw`<div class="muted">توفي ${p.death_year_hijri}هـ</div>` : ''}`;
+        li.innerHTML = String.raw`<h3>${p.full_name}</h3><p class="muted">${rolesHtml}</p>${dateHtml}`;
         li.onclick = () => {
             alert([p.full_name, p.bio_summary || '', (p.sources || []).join('\n- ')].filter(Boolean).join('\n\n'));
         };
